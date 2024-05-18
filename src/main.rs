@@ -6,7 +6,8 @@ fn answer() -> u32 {
     42
 }
 
-pub fn not_tested() -> u32 {
+#[allow(dead_code)]
+fn not_tested() -> u32 {
     42
 }
 
