@@ -17,3 +17,7 @@
 cargo tarpaulin --target-dir target/tarpaulin-target/ --skip-clean
 
 cargo tarpaulin --target-dir target/tarpaulin-target/ --skip-clean --out Lcov
+
+## run one test
+
+cargo tarpaulin --ignore-tests --target-dir target/tarpaulin-target/ --skip-clean --out Lcov  -- --nocapture test::num_test_smaller
