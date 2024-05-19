@@ -20,7 +20,7 @@ mod test {
     use super::*;
 
     #[test]
-    fn num_test_greater() {
+    fn num_test_greater_success() {
         assert_eq!(greater_than_5(6), 1);
     }
 
@@ -36,3 +36,8 @@ mod test {
 }
 
 // cargo tarpaulin --ignore-tests --target-dir target/tarpaulin-target/ --skip-clean --out Lcov
+
+// all test
+// cargo tarpaulin --ignore-tests --target-dir target/tarpaulin-target/ --skip-clean --out Lcov  -- --nocapture
+
+// cargo tarpaulin --target-dir target/tarpaulin-target/ --skip-clean --out Lcov
