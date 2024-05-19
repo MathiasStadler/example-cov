@@ -11,3 +11,9 @@
 [follow up video](https://www.youtube.com/watch?v=JEgrkmEAHjA)
 
 [Speed up Rust CI pipelines that use Tarpaulin](https://identeco.de/en/blog/speed-up-rust-ci-pipelines-that-use-tarpaulin/)
+
+## cargo tarpaulin --out Lcov --skip-clean
+
+cargo tarpaulin --target-dir target/tarpaulin-target/ --skip-clean
+
+cargo tarpaulin --target-dir target/tarpaulin-target/ --skip-clean --out Lcov
